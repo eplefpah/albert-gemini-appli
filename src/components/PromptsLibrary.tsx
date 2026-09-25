@@ -96,7 +96,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Rechercher un gabarit..."
-            className="w-full text-xs pl-9 pr-3 py-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 shadow-2xs"
+            className="w-full text-xs pl-9 pr-3 py-2 bg-white border border-slate-200 rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500 shadow-sm"
           />
         </div>
       </div>
@@ -109,7 +109,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
             onClick={() => setSelectedCategory(cat.id)}
             className={`px-3 py-1.5 rounded-lg font-medium whitespace-nowrap transition-colors ${
               selectedCategory === cat.id
-                ? 'bg-blue-700 text-white shadow-2xs'
+                ? 'bg-blue-700 text-white shadow-sm'
                 : 'bg-white text-slate-600 border border-slate-200 hover:bg-slate-100'
             }`}
           >
@@ -124,7 +124,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
           <div
             key={p.id}
             onClick={() => handleOpenPrompt(p)}
-            className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-xs transition-all cursor-pointer flex flex-col justify-between"
+            className="group bg-white border border-slate-200 rounded-xl p-5 hover:border-blue-400 hover:shadow-sm transition-all cursor-pointer flex flex-col justify-between"
           >
             <div>
               <div className="flex items-center justify-between gap-2 mb-2 text-xs text-slate-500 font-mono">
@@ -149,7 +149,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
 
       {/* Modal interactif de configuration du gabarit */}
       {activePrompt && (
-        <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-xs flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 bg-slate-900/40 backdrop-blur-sm flex items-center justify-center p-4">
           <div className="bg-white rounded-2xl max-w-2xl w-full border border-slate-200 shadow-xl overflow-hidden flex flex-col max-h-[90vh]">
             <div className="p-5 border-b border-slate-200 flex items-center justify-between">
               <div>
@@ -214,7 +214,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
             <div className="p-4 border-t border-slate-200 bg-slate-50 flex items-center justify-between">
               <button
                 onClick={handleCopySubstituted}
-                className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-100 transition-colors shadow-2xs"
+                className="flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-100 transition-colors shadow-sm"
               >
                 {copied ? (
                   <>
@@ -238,7 +238,7 @@ export const PromptsLibrary: React.FC<PromptsLibraryProps> = ({ onExecutePrompt 
                 </button>
                 <button
                   onClick={handleLaunch}
-                  className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-xs"
+                  className="flex items-center gap-1.5 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
                 >
                   <Sparkles className="w-3.5 h-3.5" />
                   <span>Lancer dans le Studio Chat</span>

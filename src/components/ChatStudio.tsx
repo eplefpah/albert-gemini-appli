@@ -256,7 +256,7 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
           <span className="text-xs font-semibold text-slate-700">Conversations</span>
           <button
             onClick={() => onCreateSession()}
-            className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-md transition-colors shadow-2xs"
+            className="flex items-center gap-1.5 px-2.5 py-1 text-xs font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-md transition-colors shadow-sm"
           >
             <Plus className="w-3.5 h-3.5" />
             <span>Nouveau</span>
@@ -480,7 +480,7 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
                   <button
                     key={idx}
                     onClick={() => handleSendMessage(qp)}
-                    className="p-3 text-xs bg-white hover:bg-blue-50/50 border border-slate-200 hover:border-blue-300 rounded-lg text-slate-700 transition-colors text-left flex items-start gap-2 shadow-2xs group"
+                    className="p-3 text-xs bg-white hover:bg-blue-50/50 border border-slate-200 hover:border-blue-300 rounded-lg text-slate-700 transition-colors text-left flex items-start gap-2 shadow-sm group"
                   >
                     <Sparkles className="w-3.5 h-3.5 text-blue-600 mt-0.5 shrink-0 group-hover:scale-110 transition-transform" />
                     <span>{qp}</span>
@@ -497,7 +497,7 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
                 }`}
               >
                 {m.role === 'assistant' && (
-                  <div className="w-8 h-8 rounded-lg bg-blue-700 text-white flex items-center justify-center shrink-0 text-xs font-bold shadow-xs">
+                  <div className="w-8 h-8 rounded-lg bg-blue-700 text-white flex items-center justify-center shrink-0 text-xs font-bold shadow-sm">
                     AL
                   </div>
                 )}
@@ -508,10 +508,10 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
                   }`}
                 >
                   <div
-                    className={`rounded-2xl px-4 py-3.5 text-xs sm:text-[13px] leading-relaxed shadow-xs ${
+                    className={`rounded-2xl px-4 py-3.5 text-xs sm:text-[13px] leading-relaxed shadow-sm ${
                       m.role === 'user'
                         ? 'bg-blue-700 text-white rounded-tr-none'
-                        : 'bg-white text-slate-800 border border-slate-200/90 rounded-tl-none w-full shadow-2xs'
+                        : 'bg-white text-slate-800 border border-slate-200/90 rounded-tl-none w-full shadow-sm'
                     }`}
                   >
                     {m.role === 'assistant' ? (
@@ -610,7 +610,7 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
                 </div>
 
                 {m.role === 'user' && (
-                  <div className="w-8 h-8 rounded-lg bg-slate-800 text-white flex items-center justify-center shrink-0 text-xs shadow-xs">
+                  <div className="w-8 h-8 rounded-lg bg-slate-800 text-white flex items-center justify-center shrink-0 text-xs shadow-sm">
                     <User className="w-4 h-4" />
                   </div>
                 )}
@@ -661,7 +661,7 @@ export const ChatStudio: React.FC<ChatStudioProps> = ({
                     disabled={!inputMessage.trim()}
                     className={`p-2 rounded-lg transition-colors ${
                       inputMessage.trim()
-                        ? 'bg-blue-700 hover:bg-blue-800 text-white shadow-xs'
+                        ? 'bg-blue-700 hover:bg-blue-800 text-white shadow-sm'
                         : 'bg-slate-200 text-slate-400 cursor-not-allowed'
                     }`}
                     title="Envoyer"

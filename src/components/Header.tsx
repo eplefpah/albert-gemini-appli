@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({
         <div className="flex items-center justify-between h-16 gap-4">
           {/* Zone 1 : Marque & Armoiries Républicaines discrètes */}
           <div className="flex items-center gap-3 shrink-0">
-            <div className="w-8 h-8 rounded-lg bg-blue-700 flex items-center justify-center text-white font-bold text-sm shadow-xs border border-blue-800">
+            <div className="w-8 h-8 rounded-lg bg-blue-700 flex items-center justify-center text-white font-bold text-sm shadow-sm border border-blue-800">
               <span className="text-white text-xs font-semibold tracking-tighter">AL</span>
             </div>
             <div className="flex flex-col">
@@ -64,7 +64,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSelectTab('chat')}
               className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
                 currentTab === 'chat'
-                  ? 'bg-white text-blue-900 shadow-xs border border-slate-200/80 font-semibold'
+                  ? 'bg-white text-blue-900 shadow-sm border border-slate-200/80 font-semibold'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
               }`}
             >
@@ -76,7 +76,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSelectTab('agrocampus')}
               className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
                 currentTab === 'agrocampus'
-                  ? 'bg-white text-blue-900 shadow-xs border border-slate-200/80 font-semibold'
+                  ? 'bg-white text-blue-900 shadow-sm border border-slate-200/80 font-semibold'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
               }`}
             >
@@ -88,7 +88,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSelectTab('prompts')}
               className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
                 currentTab === 'prompts'
-                  ? 'bg-white text-blue-900 shadow-xs border border-slate-200/80 font-semibold'
+                  ? 'bg-white text-blue-900 shadow-sm border border-slate-200/80 font-semibold'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
               }`}
             >
@@ -100,7 +100,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSelectTab('rag')}
               className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
                 currentTab === 'rag'
-                  ? 'bg-white text-blue-900 shadow-xs border border-slate-200/80 font-semibold'
+                  ? 'bg-white text-blue-900 shadow-sm border border-slate-200/80 font-semibold'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
               }`}
             >
@@ -112,7 +112,7 @@ export const Header: React.FC<HeaderProps> = ({
               onClick={() => onSelectTab('diagnostics')}
               className={`flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded-md transition-colors whitespace-nowrap ${
                 currentTab === 'diagnostics'
-                  ? 'bg-white text-blue-900 shadow-xs border border-slate-200/80 font-semibold'
+                  ? 'bg-white text-blue-900 shadow-sm border border-slate-200/80 font-semibold'
                   : 'text-slate-600 hover:text-slate-900 hover:bg-slate-200/50'
               }`}
             >
@@ -150,7 +150,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Export Ionos */}
             <button
               onClick={onExportIonos}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-slate-700 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors shadow-2xs whitespace-nowrap"
+              className="flex items-center gap-1.5 px-2.5 py-1.5 text-xs font-medium text-slate-700 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors shadow-sm whitespace-nowrap"
               title="Exporter les conversations au format compatible Ionos /data/"
             >
               <Download className="w-3.5 h-3.5 text-slate-500" />
@@ -160,7 +160,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Bouton Paramètres */}
             <button
               onClick={onOpenSettings}
-              className="p-1.5 text-slate-600 hover:text-slate-900 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors shadow-2xs"
+              className="p-1.5 text-slate-600 hover:text-slate-900 bg-white border border-slate-200 rounded-md hover:bg-slate-50 transition-colors shadow-sm"
               title="Paramètres API & Connexions"
             >
               <Settings className="w-4 h-4" />

@@ -61,7 +61,7 @@ export const RagSearch: React.FC<RagSearchProps> = ({ onInjectIntoChat }) => {
       </div>
 
       {/* Barre de recherche & filtres */}
-      <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-xs space-y-3">
+      <div className="bg-white border border-slate-200 rounded-xl p-4 shadow-sm space-y-3">
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -82,7 +82,7 @@ export const RagSearch: React.FC<RagSearchProps> = ({ onInjectIntoChat }) => {
           <button
             type="submit"
             disabled={isLoading}
-            className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-xs"
+            className="px-4 py-2.5 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-semibold transition-colors flex items-center gap-1.5 shadow-sm"
           >
             <Search className="w-3.5 h-3.5" />
             <span>Rechercher</span>
@@ -122,7 +122,7 @@ export const RagSearch: React.FC<RagSearchProps> = ({ onInjectIntoChat }) => {
           results.map((doc) => (
             <div
               key={doc.id}
-              className="bg-white border border-slate-200 rounded-xl p-5 hover:border-slate-300 transition-all shadow-xs flex flex-col justify-between gap-4"
+              className="bg-white border border-slate-200 rounded-xl p-5 hover:border-slate-300 transition-all shadow-sm flex flex-col justify-between gap-4"
             >
               <div>
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -175,7 +175,7 @@ export const RagSearch: React.FC<RagSearchProps> = ({ onInjectIntoChat }) => {
 
                 <button
                   onClick={() => onInjectIntoChat(doc)}
-                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-2xs"
+                  className="flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
                 >
                   <MessageSquareShare className="w-3.5 h-3.5" />
                   <span>Analyser avec Albert dans le Chat</span>

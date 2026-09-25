@@ -90,7 +90,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
       {/* Bannière de contexte territorial */}
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
         <div>
           <div className="flex items-center gap-2 text-xs font-semibold text-blue-700 mb-1">
             <MapPin className="w-3.5 h-3.5" />
@@ -125,7 +125,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
           onClick={() => setActivePole('exploitation')}
           className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${
             activePole === 'exploitation'
-              ? 'bg-blue-50/70 border-blue-300 shadow-xs'
+              ? 'bg-blue-50/70 border-blue-300 shadow-sm'
               : 'bg-white border-slate-200 hover:bg-slate-50'
           }`}
         >
@@ -146,7 +146,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
           onClick={() => setActivePole('pedagogie')}
           className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${
             activePole === 'pedagogie'
-              ? 'bg-blue-50/70 border-blue-300 shadow-xs'
+              ? 'bg-blue-50/70 border-blue-300 shadow-sm'
               : 'bg-white border-slate-200 hover:bg-slate-50'
           }`}
         >
@@ -167,7 +167,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
           onClick={() => setActivePole('circuits_courts')}
           className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${
             activePole === 'circuits_courts'
-              ? 'bg-blue-50/70 border-blue-300 shadow-xs'
+              ? 'bg-blue-50/70 border-blue-300 shadow-sm'
               : 'bg-white border-slate-200 hover:bg-slate-50'
           }`}
         >
@@ -188,7 +188,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
           onClick={() => setActivePole('riverains')}
           className={`flex items-start gap-3 p-4 rounded-xl border text-left transition-all ${
             activePole === 'riverains'
-              ? 'bg-blue-50/70 border-blue-300 shadow-xs'
+              ? 'bg-blue-50/70 border-blue-300 shadow-sm'
               : 'bg-white border-slate-200 hover:bg-slate-50'
           }`}
         >
@@ -207,7 +207,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
       </div>
 
       {/* Contenu interactif selon le pôle choisi */}
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs">
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm">
         {activePole === 'exploitation' && (
           <div className="space-y-6">
             <div className="border-b border-slate-200 pb-4">
@@ -264,7 +264,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
             <div className="flex justify-end pt-2">
               <button
                 onClick={handleLaunchAssolement}
-                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-xs"
+                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Générer le plan d’assolement dans Albert</span>
@@ -339,7 +339,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
             <div className="flex justify-end pt-2">
               <button
                 onClick={handleLaunchTp}
-                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-xs"
+                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
               >
                 <GraduationCap className="w-3.5 h-3.5" />
                 <span>Rédiger la fiche pédagogique dans Albert</span>
@@ -390,7 +390,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
             <div className="flex justify-end pt-2">
               <button
                 onClick={handleLaunchBoutique}
-                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-xs"
+                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
               >
                 <Store className="w-3.5 h-3.5" />
                 <span>Générer l’annonce commerciale dans Albert</span>
@@ -427,7 +427,7 @@ Explique la nécessité agronomique de ces interventions, les mesures prises pou
             <div className="flex justify-end pt-2">
               <button
                 onClick={handleLaunchRiverains}
-                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-xs"
+                className="flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-700 hover:bg-blue-800 rounded-lg transition-colors shadow-sm"
               >
                 <Users className="w-3.5 h-3.5" />
                 <span>Rédiger le message riverains dans Albert</span>

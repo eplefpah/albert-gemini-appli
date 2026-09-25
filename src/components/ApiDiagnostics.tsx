@@ -101,7 +101,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
 
         <button
           onClick={onRefreshHealth}
-          className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors shadow-2xs self-start sm:self-auto"
+          className="flex items-center gap-1.5 px-3 py-2 text-xs font-semibold text-slate-700 bg-white border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors shadow-sm self-start sm:self-auto"
         >
           <RefreshCw className="w-3.5 h-3.5 text-blue-700" />
           <span>Rafraîchir les sondes</span>
@@ -111,7 +111,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
       {/* Cartes d'état de l'infrastructure */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Albert API */}
-        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">
               Albert API DINUM
@@ -144,7 +144,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
         </div>
 
         {/* Supabase Privé */}
-        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">
               Base Supabase Privée
@@ -173,7 +173,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
         </div>
 
         {/* Bilan Écologique DINUM */}
-        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-xs">
+        <div className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-bold text-slate-700 uppercase tracking-wider">
               Éco-Indicateurs DINUM
@@ -191,7 +191,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
       </div>
 
       {/* Banc de test interactif de requêtes */}
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs space-y-4">
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm space-y-4">
         <div className="flex items-center gap-2 border-b border-slate-200 pb-3">
           <Terminal className="w-4 h-4 text-blue-700" />
           <h2 className="text-sm font-bold text-slate-900">
@@ -233,7 +233,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
             <button
               onClick={handleRunRawTest}
               disabled={isLoading}
-              className="flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-semibold transition-colors shadow-xs"
+              className="flex items-center gap-2 px-4 py-2 bg-blue-700 hover:bg-blue-800 text-white rounded-lg text-xs font-semibold transition-colors shadow-sm"
             >
               {isLoading ? (
                 <>
@@ -299,7 +299,7 @@ export const ApiDiagnostics: React.FC<ApiDiagnosticsProps> = ({
       </div>
 
       {/* Inventaire détaillé des modèles Albert DINUM */}
-      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-xs space-y-4">
+      <div className="bg-white border border-slate-200 rounded-xl p-6 shadow-sm space-y-4">
         <h2 className="text-sm font-bold text-slate-900">
           Modèles d’IA Disponibles sur l’Infrastructure DINUM
         </h2>
