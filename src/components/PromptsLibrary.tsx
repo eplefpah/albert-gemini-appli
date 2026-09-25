@@ -1,14 +1,5 @@
 import React, { useState } from 'react';
-import {
-  BookOpen,
-  Filter,
-  ArrowRight,
-  Copy,
-  Check,
-  Sparkles,
-  Search,
-  SlidersHorizontal,
-} from 'lucide-react';
+import { BookOpen, ListFilter as Filter, ArrowRight, Copy, Check, Sparkles, Search, SlidersHorizontal } from 'lucide-react';
 import { AgrocampusPrompt } from '../types';
 import { AGROCAMPUS_PROMPTS } from '../data/agrocampusPrompts';
 

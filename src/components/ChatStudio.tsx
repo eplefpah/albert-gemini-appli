@@ -1,24 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import {
-  Send,
-  Square,
-  Copy,
-  Check,
-  Download,
-  Trash2,
-  Plus,
-  Sliders,
-  ChevronDown,
-  ChevronUp,
-  CloudUpload,
-  Cpu,
-  Leaf,
-  Clock,
-  Sparkles,
-  Bot,
-  User,
-  Code,
-} from 'lucide-react';
+import { Send, Square, Copy, Check, Download, Trash2, Plus, FileSliders as Sliders, ChevronDown, ChevronUp, CloudUpload, Cpu, Leaf, Clock, Sparkles, Bot, User, Code } from 'lucide-react';
 import {
   AlbertModel,
   ChatMessage,

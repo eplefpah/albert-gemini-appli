@@ -1,15 +1,5 @@
 import React, { useState } from 'react';
-import {
-  Settings,
-  Key,
-  Database,
-  Cloud,
-  CheckCircle2,
-  AlertCircle,
-  RefreshCw,
-  FolderTree,
-  Save,
-} from 'lucide-react';
+import { Settings, Key, Database, Cloud, CircleCheck as CheckCircle2, CircleAlert as AlertCircle, RefreshCw, FolderTree, Save } from 'lucide-react';
 import { UserSettings } from '../types';
 import { testAlbertConnection } from '../services/albertApi';
 import { testSupabaseConnection } from '../services/storageService';

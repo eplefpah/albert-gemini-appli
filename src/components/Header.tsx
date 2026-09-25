@@ -1,17 +1,5 @@
 import React from 'react';
-import {
-  MessageSquare,
-  Sprout,
-  BookOpen,
-  Search,
-  Activity,
-  Settings,
-  Download,
-  Database,
-  CheckCircle2,
-  AlertCircle,
-  RefreshCw,
-} from 'lucide-react';
+import { MessageSquare, Sprout, BookOpen, Search, Activity, Settings, Download, Database, CircleCheck as CheckCircle2, CircleAlert as AlertCircle, RefreshCw } from 'lucide-react';
 import { ApiHealthStatus } from '../types';
 
 interface HeaderProps {
