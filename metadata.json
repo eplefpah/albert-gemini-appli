@@ -1,0 +1,6 @@
+{
+  "name": "Console Albert DINUM - Agrocampus & Souveraineté",
+  "description": "Portail d'intelligence artificielle souveraine pour l'enseignement et l'exploitation agricole péri-urbaine propulsé par l'API Albert de la DINUM.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
